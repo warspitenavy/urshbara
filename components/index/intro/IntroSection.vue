@@ -26,7 +26,12 @@ const props = defineProps<Props>()
         </a>
         <p v-if="c.description">{{ c.description }}</p>
       </div>
-      <a v-if="c.link" class="intro-card link-card" :href="c.link">
+      <a
+        v-if="c.link"
+        class="intro-card link-card"
+        :href="c.link"
+        target="_blank"
+      >
         <h3>{{ c.title }}</h3>
         <p v-if="c.description">{{ c.description }}</p>
       </a>
@@ -41,10 +46,10 @@ const props = defineProps<Props>()
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .intro-card-command {
-  font-size: 1rem;
   font-weight: bold;
   color: #fff;
   background-color: #000;
@@ -78,7 +83,7 @@ const props = defineProps<Props>()
   // border: 1px solid #ccc;
   box-shadow: 0 0 0 1px #ccc;
   border-radius: 0.5rem;
-  margin: 0.5rem;
+  margin: 0 0.5rem;
   background: #fff;
 
   h3 {
