@@ -1,6 +1,6 @@
 <template>
   <div class="hello-bottom-banner">
-    <p>このサイトはNuxt3のお試しに作ったものです。</p>
+    <p>このサイトはNuxt3のお試しで作ったものです。</p>
   </div>
 </template>
 
