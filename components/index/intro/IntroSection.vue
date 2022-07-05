@@ -80,7 +80,7 @@ const props = defineProps<Props>()
 .intro-card {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.75rem;
   // width: 100%;
   flex-basis: 100%;
   padding: 1rem;
