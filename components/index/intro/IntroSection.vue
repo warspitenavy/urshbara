@@ -93,6 +93,11 @@ const props = defineProps<Props>()
     font-weight: bold;
     margin: 0;
   }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .link-card {
