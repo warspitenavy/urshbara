@@ -5,8 +5,6 @@
 </template>
 
 <style lang="scss">
-@import '@/global.scss';
-
 .hello-bottom-banner {
   display: flex;
   flex-direction: column;

@@ -40,8 +40,6 @@ const props = defineProps<Props>()
 </template>
 
 <style lang="scss">
-// @import '@/global.scss';
-
 .intro-section {
   display: flex;
   flex-direction: row;
