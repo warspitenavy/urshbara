@@ -2,6 +2,6 @@
   <div class="index">
     <IndexHello />
     <IndexHelloBottomBanner />
-    <IndexIntro command="i-like" />
+    <IndexIntro />
   </div>
 </template>
