@@ -19,12 +19,12 @@ const intro = [
       {
         title: 'ミリシタ',
         description: '2020/09より開始',
-        image: '/imasml-theater-meishi.jpg'
+        image: '/imasml-theater-meishi.webp'
       },
       {
         title: 'Minecraft',
         description: '2011年くらいから',
-        image: '/minecraft-ss.jpg'
+        image: '/minecraft-ss.webp'
       }
     ]
   },
