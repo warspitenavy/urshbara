@@ -16,7 +16,7 @@ FROM gcr.io/distroless/nodejs:16
 
 WORKDIR /usr/src/app
 
-COPY --from=build /usr/src/app ./
+COPY --from=build /usr/src/app/.output .output
 
 EXPOSE 3000
 
