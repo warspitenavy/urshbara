@@ -10,7 +10,8 @@
 useHead({
   bodyAttrs: {
     class: 'biz-udpgothic'
-  }
+  },
+  title: '漆原のホームページ'
 })
 </script>
 
