@@ -62,29 +62,8 @@ const intro = [
     ]
   }
 ]
-const url = 'https://zenn.dev/warspitenavy/feed'
 
-// rss feed
-const res = await useFetch(url, {
-  headers: {
-    'Content-Type': 'text/xml'
-  }
-})
-
-const parser = new XMLParser({
-  isArray: (name, jpath) => jpath === 'rss.channel.item'
-})
-const text = `${res.data.value}`
-const xml = await parser.parse(text)
-const itemArray = xml.rss.channel.item.slice(0, 5) as any[]
-const items = itemArray.map((item) => {
-  return {
-    title: item.title,
-    link: item.link,
-    pubDate: item.pubDate,
-    description: item.description
-  }
-})
+const items = await $fetch('/api/zenn-rss')
 
 intro.unshift({
   command: 'ls zenn -l',
